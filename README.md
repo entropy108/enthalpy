@@ -51,7 +51,7 @@
 |---|---|
 | 🪟 **Window Manager** | [Hyprland](https://hyprland.org/) — silky smooth Wayland compositor |
 | 🖥️ **Terminal** | [Kitty](https://sw.kovidgoyal.net/kitty/) — the fast, featureful GPU terminal |
-| 🎵 **Audio Visualizer** | [CAVA](https://github.com/karlstav/cava) — console-based audio visualizer |
+| 🎵 **Audio Visualizer** | [Cava](https://github.com/karlstav/cava) — console-based audio visualizer |
 | 🚀 **Shell** | zsh *(THE BEST SHELL)* |
 | 📊 **Status Bar** | Waybar — because plain taskbars are for cowards |
 | 🚀 **Launcher** | Rofi — summon apps like spells |
