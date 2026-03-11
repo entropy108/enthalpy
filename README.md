@@ -147,8 +147,8 @@ Huge thanks to the legends at **r/unixporn**, the **Hyprland Discord**, and ever
 <br>
 
 ```
-made with ♥, caffeine, and an unhealthy amount of time
-       in the terminal instead of touching grass
+                     made with ♥, caffeine, and an unhealthy amount of time
+                           in the terminal instead of touching grass
 ```
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=YOUR_USERNAME.dotfiles)
