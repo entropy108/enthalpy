@@ -52,32 +52,16 @@
 | 🪟 **Window Manager** | [Hyprland](https://hyprland.org/) — silky smooth Wayland compositor |
 | 🖥️ **Terminal** | [Kitty](https://sw.kovidgoyal.net/kitty/) — the fast, featureful GPU terminal |
 | 🎵 **Audio Visualizer** | [CAVA](https://github.com/karlstav/cava) — console-based audio visualizer |
-| 🚀 **Shell** | zsh / fish *(pick your poison)* |
+| 🚀 **Shell** | zsh *(THE BEST SHELL)* |
 | 📊 **Status Bar** | Waybar — because plain taskbars are for cowards |
-| 🚀 **Launcher** | Wofi / Rofi — summon apps like spells |
-| 🔔 **Notifications** | Dunst / Mako — fancy little toasts |
-| 🎨 **Color Scheme** | Catppuccin / Gruvbox *(vibes-based decision)* |
+| 🚀 **Launcher** | Rofi — summon apps like spells |
+| 🔔 **Notifications** | Dunst — fancy little toasts |
+| 💻 **File Manager** | Yazi — Pure Satisfaction |
 
 
 ---
 
 ## ⚡ INSTALLATION
-
-> **WARNING:** This will obliterate your existing configs. Back up your stuff unless you enjoy pain.
-
-### 🔧 The "I Trust Strangers on the Internet" Method
-
-```bash
-# Clone this beautiful disaster
-git clone https://github.com/YOUR_USERNAME/dotfiles.git ~/.dotfiles
-
-# Back up your existing configs (do this, seriously)
-cp -r ~/.config ~/.config.bak
-
-# Symlink everything with stow (the chad approach)
-cd ~/.dotfiles
-stow hypr kitty cava waybar wofi dunst
-```
 
 ### 🛠️ Manual Method (for control freaks, respectfully)
 
@@ -96,13 +80,10 @@ cp -r dotfiles/.config/cava ~/.config/cava
 
 ```bash
 # Core chaos
-sudo pacman -S hyprland waybar kitty wofi dunst
+sudo pacman -S hyprland waybar kitty wofi swaync
 
 # Audio visualizer greatness  
 sudo pacman -S cava
-
-# Fonts (non-negotiable, your eyes deserve this)
-sudo pacman -S ttf-jetbrains-mono-nerd ttf-font-awesome
 
 # Nice to haves
 sudo pacman -S swww               # wallpaper daemon
@@ -121,15 +102,14 @@ sudo pacman -S playerctl          # media control
 | Keys | Action |
 |------|--------|
 | `SUPER + Return` | Open terminal (Kitty) |
-| `SUPER + D` | Open launcher (Wofi) |
+| `SUPER + SPACE` | Open launcher (Wofi) |
 | `SUPER + Q` | Kill focused window |
 | `SUPER + F` | Fullscreen |
-| `SUPER + V` | Toggle floating |
+| `SUPER + T` | Toggle floating |
 | `SUPER + [1-9]` | Switch workspace |
 | `SUPER + SHIFT + [1-9]` | Move window to workspace |
 | `SUPER + SHIFT + S` | Screenshot selection |
 | `SUPER + L` | Lock screen |
-| `SUPER + M` | Exit Hyprland (don't) |
 
 ---
 
@@ -149,79 +129,6 @@ Currently rocking **Catppuccin Mocha** 🐱
  Yellow      #F9E2AF  ████  warm butter
  Peach       #FAB387  ████  sunset feels
 ```
-
----
-
-## 🎵 CAVA CONFIG HIGHLIGHTS
-
-*making your music visible since you installed this*
-
-```ini
-[general]
-bars = 50
-bar_width = 2
-bar_spacing = 1
-
-[color]
-gradient = 1
-gradient_count = 8
-gradient_color_1 = '#CBA6F7'  # lavender
-gradient_color_2 = '#89B4FA'  # blue
-gradient_color_3 = '#A6E3A1'  # green
-```
-
-*Result: absolute cinema in your terminal*
-
----
-
-## 🖼️ HYPRLAND ANIMATION CONFIG
-
-*because smooth animations are a human right*
-
-```ini
-animations {
-    enabled = yes
-    bezier = overshot, 0.05, 0.9, 0.1, 1.05
-    bezier = smoothOut, 0.36, 0, 0.66, -0.56
-    bezier = smoothIn, 0.25, 1, 0.5, 1
-
-    animation = windows, 1, 5, overshot, slide
-    animation = windowsOut, 1, 4, smoothOut, slide
-    animation = border, 1, 10, default
-    animation = workspaces, 1, 6, smoothIn, slide
-}
-```
-
----
-
-## 🤝 CONTRIBUTING / STEALING
-
-See something you like? **Take it.** That's the Linux spirit. ✊
-
-If you actually want to contribute improvements:
-
-1. 🍴 Fork this repo
-2. 🌿 Create a branch (`git checkout -b feature/even-more-rice`)
-3. ✍️ Make your changes
-4. 📬 Open a PR
-
----
-
-## 🐛 KNOWN ISSUES
-
-- [ ] Sometimes Hyprland crashes and I have no idea why *(it's fine)*
-- [ ] CAVA occasionally seizes on bluetooth audio *(skill issue)*
-- [ ] Waybar sometimes decides to not render icons *(vibes)*
-- [ ] My screen randomly goes black *(touch grass, it fixes itself)*
-- [ ] I keep adding new configs instead of finishing old ones
-
----
-
-## 📜 LICENSE
-
-Do whatever you want with this. It's dotfiles, not nuclear codes.
-
-[WTFPL](http://www.wtfpl.net/) — *Do What The F\*ck You Want To Public License*
 
 ---
 
