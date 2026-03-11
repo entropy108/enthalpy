@@ -95,7 +95,7 @@ sudo pacman -S playerctl          # media control
 
 ---
 
-## ⌨️ KEYBINDS CHEATSHEET
+## ⌨️ KEYBINDS 
 
 *because future-me always forgets*
 
