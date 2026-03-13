@@ -68,7 +68,7 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/dotfiles.git
+git clone https://github.com/entropy108/arch-hyprland.git
 
 # Copy what you want, piece by piece
 cp -r dotfiles/.config/hypr ~/.config/hypr
